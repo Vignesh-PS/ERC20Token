@@ -5,20 +5,15 @@ contract ERC20Basic {
     string public  name = "ERC20";
     string public  symbol;
     uint8 public  decimals = 18;  
-
-
+    
     event Approval(address  tokenOwner, address  spender, uint tokens);
     event Transfer(address  from, address  to, uint tokens);
 
-
     mapping(address => uint) balances;
-
     mapping(address => mapping (address => uint256)) allowed;
     
     uint256 totalSupply_;
-
-
-
+    
    constructor(uint total) public {  
 	totalSupply_ = total;
 	balances[msg.sender] = totalSupply_;
