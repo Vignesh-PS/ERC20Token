@@ -1,6 +1,6 @@
 pragma solidity ^0.5.8;
 
-contract ERC20Basic {
+contract ERC20 {
 
     string public  name = "ERC20";
     string public  symbol;
